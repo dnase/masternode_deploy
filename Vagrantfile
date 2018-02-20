@@ -6,10 +6,10 @@ require 'json'
 configuration = JSON.parse(File.read('files/data/config.json'))
 
 Vagrant.configure("2") do |config|
-  config.vm.define "containerhost" do |vbox|
+  config.vm.define "masternode" do |vbox|
     # general config
     vbox.vm.box = "xcoo/xenial64"
-    vbox.vm.hostname = "containerhost.amms.net"
+    vbox.vm.hostname = "masternode.vm"
     # virtualbox config
     vbox.vm.provider "virtualbox" do |v|
       v.memory = 8192
