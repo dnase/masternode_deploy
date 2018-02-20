@@ -26,6 +26,7 @@ Vagrant.configure("2") do |config|
       override.ssh.username = "ubuntu"
       override.ssh.private_key_path = configuration['aws_credentials']['keypath']
     end
+    # scripts
     vbox.vm.provision :shell, inline: "chmod +x /vagrant/files/scripts/*.sh"
     vbox.vm.provision :shell, inline: "/vagrant/files/scripts/install.sh"
   end
