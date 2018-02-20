@@ -1,0 +1,10 @@
+{
+  "rpc_password": "YOUR RPC PASSWORD",
+  "aws_credentials":
+  {
+    "access_key_id": "YOUR ACCESS KEY ID",
+    "secret_access_key": "YOUR SECRET ACCESS KEY",
+    "keypath": "path/to/key.pem",
+    "keypair_name": "YOUR KEYPAIR NAME"
+  }
+}
